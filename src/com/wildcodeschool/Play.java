@@ -42,7 +42,7 @@ public class Play {
     }
 
     public static int pickCard(int score, boolean isPlayer) {
-        int currentCard = giveCard();
+        int currentCard = createRandomCard();
         UserInterface.dealerGivesCard(isPlayer, currentCard);
         score += currentCard;
         UserInterface.showScore(isPlayer, score);
@@ -50,7 +50,7 @@ public class Play {
         return score;
     }
 
-    public static int giveCard() {
+    public static int createRandomCard() {
         int card = new Random().nextInt(10) + 1;
         // TODO : face cards
         // TODO : ace (1 or 10)
