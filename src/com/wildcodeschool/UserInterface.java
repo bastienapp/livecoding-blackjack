@@ -12,25 +12,25 @@ public class UserInterface {
         }
     }
 
-    public static boolean doesPlayerContinue() {
+    public static boolean doesPlayerContinues() {
         System.out.println("Play again? (y/n)");
         Scanner sc = new Scanner(System.in);
         String entry = sc.next();
         return entry.equalsIgnoreCase("y");
     }
 
-    public static boolean doesPlayerPickCard() {
+    public static boolean doesPlayerPicksCard() {
         System.out.println("Pick a new card? (y/n)");
         Scanner sc = new Scanner(System.in);
         String entry = sc.next();
         return entry.equalsIgnoreCase("y");
     }
 
-    public static void dealerHideCard() {
+    public static void dealerHidesCard() {
         System.out.println("Dealer picks a face down card.");
     }
 
-    public static void dealerRevealCard() {
+    public static void dealerRevealsCard() {
         System.out.println("Dealer reveals his face down card.");
     }
 

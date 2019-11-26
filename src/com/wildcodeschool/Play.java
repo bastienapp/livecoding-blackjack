@@ -7,7 +7,7 @@ public class Play {
     public static void main(String[] args) {
         do  {
             game();
-        } while (UserInterface.doesPlayerContinue()) ;
+        } while (UserInterface.doesPlayerContinues()) ;
     }
 
     public static void game() {
@@ -18,16 +18,16 @@ public class Play {
         scorePlayer = pickCard(scorePlayer, true);
         scoreDealer = pickCard(scoreDealer, false);
 
-        UserInterface.dealerHideCard();
+        UserInterface.dealerHidesCard();
 
-        while (scorePlayer < 21 && UserInterface.doesPlayerPickCard()) {
+        while (scorePlayer < 21 && UserInterface.doesPlayerPicksCard()) {
             scorePlayer = pickCard(scorePlayer, true);
         }
 
         boolean playerWins = false;
         if (scorePlayer <= 21) {
             // TODO : better way to reveal the dealer card
-            UserInterface.dealerRevealCard();
+            UserInterface.dealerRevealsCard();
             scoreDealer = pickCard(scoreDealer, false);
 
             while (scoreDealer < 17) {
