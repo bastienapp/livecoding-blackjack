@@ -6,7 +6,7 @@ public class UserInterface {
 
     public static void gameOver(boolean playerWins) {
         if (playerWins) {
-            System.out.println("Good game!");
+            System.out.println("Congratulation, you win!");
         } else {
             System.out.println("You lose!");
         }
@@ -27,11 +27,11 @@ public class UserInterface {
     }
 
     public static void dealerHideCard() {
-        System.out.println("Dealer pick a face down card.");
+        System.out.println("Dealer picks a face down card.");
     }
 
     public static void dealerRevealCard() {
-        System.out.println("Dealer reveal is face down card.");
+        System.out.println("Dealer reveals his face down card.");
     }
 
     public static void dealerGivesCard(boolean isPlayer, int card) {
